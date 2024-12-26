@@ -1,0 +1,44 @@
+<!-- .ejs file uses HTML + JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Horn</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='app.js'></script>
+    <link rel="icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/7cf437eba7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <main class="home_about">
+        <div class="spacer"></div>
+        <h2 >Contact</h1>
+            <section>
+                <a class="link_icon" href="mailto:ehorn36@gmail.com"     
+                    target="_blank">                
+                    <i class="fa-regular fa-envelope fa-3x"></i>
+                </a>
+            </section>
+    </main>
+    <footer>
+        <p class="center">
+            &copy; 
+            <span id="year">
+                <script>
+                    document.getElementById("year").appendChild(document.createTextNode(new Date().getFullYear()))
+                </script>
+            </span>
+            Eric Horn
+        </p>
+    </footer>      
+</body>
+</html>
