@@ -11,10 +11,10 @@ const path = require('path');
 app.set('view engine', 'ejs');
 
 // Define the location of views.
-app.set('views', path.join(__dirname, '/views'));
+app.set('views', path.join(__dirname, './views'));
 
 // Define the location of the public directory for css, js, and imgs.
-app.use(express.static('../public'));
+app.use(express.static('./public'));
 
 
 

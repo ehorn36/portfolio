@@ -1,0 +1,84 @@
+<!-- .ejs file uses HTML + JavaScript -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eric Horn</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='app.js'></script>
+    <link rel="icon" href="images/favicon.ico">
+    <script src="https://kit.fontawesome.com/7cf437eba7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/">Home</a>
+            <a href="/portfolio">Portfolio</a>
+            <a href="/contact">Contact</a>
+        </nav>
+    </header>
+    <main class="home_about">
+        <div class="spacer"></div>
+            <h2 >Portfolio</h2>
+        <div class="spacer"></div>
+            <h3>Technical Skills</h3>
+            <section class="skillsbox">
+                <div class="skill-item">
+                    <i class="fa-brands fa-html5 skill"></i>
+                    <p class="skill-description">HTML</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-css skill"></i>
+                    <p class="skill-description">CSS</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-js skill"></i>
+                    <p class="skill-description">JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-node-js skill"></i>
+                    <p class="skill-description">Node.js</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-database skill"></i>
+                    <p class="skill-description">SQL</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-brands fa-python skill"></i>
+                    <p class="skill-description">Python</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-code skill"></i>
+                    <p class="skill-description">C++</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fa-solid fa-code skill"></i>
+                    <p class="skill-description">Assembly</p>
+                </div>
+            </section>
+            <h3>Projects</h3>
+            <div class="project-list">
+                <a href="/" class="project">Sun-Earth-Moon animation using OpenGL</a>
+                <a href="/" class="project">Eucher cardgame</a>
+                <a href="/" class="project">Database of video game music</a>
+                <a href="/" class="project">Moving-tracking website</a>
+
+            </div>
+    </main>
+    <footer>
+        <p class="center">
+            &copy; 
+            <span id="year">
+                <script>
+                    document.getElementById("year").appendChild(document.createTextNode(new Date().getFullYear()))
+                </script>
+            </span>
+            Eric Horn
+        </p>
+    </footer>
+
+      
+</body>
+</html>

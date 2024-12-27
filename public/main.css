@@ -4,6 +4,7 @@
     --darkBlue: #01020A;
     --offWhite: #BDBDBD;
     --gold: #E8BF40;
+    --gray: #555;
 }
 
 html {
@@ -56,14 +57,29 @@ section {
     max-width: 1200px;
 }
 
-.youtube {
-    width: 320px;
-    height: 180px;
-    margin: 20px;
+.skillsbox {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
+    justify-items: center; 
+    margin-top: 5px;
+    padding-bottom: 50px;
 }
 
-.soundcloud {
-    margin: 20px;
+.skill-item {
+    text-align: center; /* Center text beneath the icon */
+}
+
+.skill {
+    font-size: 40px;                    
+    transition: transform 0.3s ease;    
+}
+
+.skill-description {
+    margin-top: 0;                    
+    font-size: 14px;                      /* Small text size */
+    color: var(--gray);                    
+    font-weight: 400;                   /* Light font weight */
 }
 
 footer {
@@ -147,6 +163,31 @@ i:focus {text-decoration: none; color: var(--offWhite);}
     padding: 5px;
 }
 
+.project-list {
+    padding: 0px 20px 0px 20px;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project {
+    text-decoration: none;
+    color: var(--offWhite);
+    padding: 15px;
+}
+
+.project:visited {text-decoration: none; color: var(--offWhite);}
+
+.project:hover {
+    text-decoration: none; color: var(--gold);
+    transform: scale(1.1);
+
+}
+
+.project:focus {text-decoration: none; color: var(--offWhite);}
+
 h2 {
     max-width: 650px;
     text-align: center;
@@ -160,6 +201,19 @@ h2 {
     border-bottom-width: 1px;
 }
 
+h3 {
+    max-width: 650px;
+    text-align: center;
+    font-weight: 300; 
+    font-size: large;
+    max-height: fit-content;
+    padding-bottom: 1%;
+    margin: 0 0 1% 0; 
+    border-bottom-style: none;
+}
+
 p {
     max-width: 650px;
 }
+
+
